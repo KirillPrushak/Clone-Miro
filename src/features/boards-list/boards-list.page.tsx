@@ -62,6 +62,7 @@ function BoardsListPage() {
 
             <CardFooter>
               <Button
+                variant="destructive"
                 onClick={() =>
                   deleteBoardMutation.mutate({
                     params: { path: { boardId: board.id } },
